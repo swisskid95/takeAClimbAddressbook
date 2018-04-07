@@ -1,0 +1,135 @@
+.CreateNewContactForm {
+    height:440px;
+    padding:10px;
+    background:rgb(240,240,240);
+    overflow:hidden;
+    display:none;
+    color: purple;
+}
+body{
+    color: purple;
+    background-color: whitesmoke;
+    margin: 50px;
+}
+h1 {
+    font-family: Monoton;
+    font-size: 4em;
+    text-align: center;
+    background-color: purple;
+    color: lightgray;
+
+}
+h2 {
+    font-family: Tangerine ;
+    margin: 30px;
+    font-size: 4em;
+    color: purple;
+    text-align: center;
+}
+#Add,#Cancel {
+    padding:10px;
+    margin:20px;
+    position:relative;
+    left:300px;
+    border:1px groove purple;
+    border-radius:5px;
+    font-weight:bold;
+    color: purple;
+}
+
+.entry {
+    background:rgb(230,230,230);
+    width:960px;
+    height:40px;
+    border-bottom:1px solid;
+}
+
+
+.entry .name {
+    width:130px;
+    float:left;
+    padding:11px;
+}
+
+.entry .email {
+    width:170px;
+    float:left;
+    padding:11px;
+}
+
+
+.entry .phone {
+    width:90px;
+    float:left;
+    padding:11px;
+}
+
+.entry .address {
+    width:200px;
+    float:left;
+    padding:11px;
+}
+
+.entry .city {
+    width:90px;
+    float:left;
+    padding:11px;
+}
+.entry .edit {
+    width:15px;
+    float:left;
+    padding:9px;
+}
+
+
+.entry .del {
+    width:15px;
+    float:left;
+    padding:9px;
+}
+
+.entry p {
+    margin:0px;
+    font-family:sans-serif;
+    font-size:12px;
+    text-shadow:0px 0px 1px rgba(0,0,0,0.4);
+}
+
+.entry .del a {
+    font-family:sans-serif;
+    color:#FFF;
+    font-size:12px;
+    padding:5px;
+    background:rgb(255,100,100);
+    border-radius:8px;
+    text-decoration:none;
+}
+.entry .edit a {
+    font-family:sans-serif;
+    color:#FFF;
+    font-size:12px;
+    padding:5px;
+    background:blue;
+    border-radius:8px;
+    text-decoration:none;
+}
+.CreateNewContactForm label {
+    color: purple;
+    position:relative;
+    display:block;
+    width:300px;
+    height:10px;
+    float:left;
+    font-family:sans-serif;
+    font-size:12px;
+    padding:10px;
+    font-weight:bold;
+}
+
+.CreateNewContactForm input,textarea {
+    width:50%;
+    padding:10px;
+    font-weight:bold;
+    border-radius:5px;
+    box-shadow:inset 0px 0px 10px whitesmoke;
+}
