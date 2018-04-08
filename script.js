@@ -1,4 +1,4 @@
-window.onload (function(){
+window.onload = function(){
 	// Buttons
 	var CreateNewContactBtn = document.getElementById('CreateNewContact');
 	var quickAddFormDiv = document.querySelector('.CreateNewContactForm')
@@ -83,13 +83,13 @@ window.onload (function(){
 			// Loop over the array addressBook and insert into the page
 			addBookDiv.innerHTML = '';
 			for(var n in addressBook){
-				var str = '<div class="entry">';
-				    str += '<div class="name"><p>' + addressBook[n].fullname + '</p></div>';
-                    str += '<div class="phone"><p>' + addressBook[n].phone + '</p></div>';
-                    str += '<div class="email"><p>' + addressBook[n].email + '</p></div>';
-					str += '<div class="address"><p>' + addressBook[n].address + '</p></div>';
-                    str += '<div class="city"><p>' + addressBook[n].city + '</p></div>';
-					str += '<div class="del"><a href="#" class="delbutton" data-id="' + n + '">Delete</a></div>';
+				var str = '<div class="entry row">';
+				    str += '<div class="name col-2"><p>' + "Full_Name: " + addressBook[n].fullname + '</p></div>';
+                    str += '<div class="phone col-2"><p>' + "Phone-number: " + addressBook[n].phone + '</p></div>';
+                    str += '<div class="email col-2"><p>' + "Email_Address: " + addressBook[n].email + '</p></div>';
+					str += '<div class="address col-2"><p>' + "Home_Address: " + addressBook[n].address + '</p></div>';
+                    str += '<div class="city col-2"><p>' + "City: " + addressBook[n].city + '</p></div>';
+					str += '<div class="del col-2"><a href="#" class="delbutton" data-id="' + n + '">Delete</a></div>';
 					str += '</div>';
 				addBookDiv.innerHTML += str;
 			}
@@ -98,4 +98,4 @@ window.onload (function(){
 
 	displayAddressBook();
 
-})
+}
